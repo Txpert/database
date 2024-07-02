@@ -53,12 +53,13 @@ public void createAuthorWithBooks() // create an Author entity with a Book entit
     addressRepository.save(author);
 }
 
-public void deletePersonWithPassport() // delete a Person entity with a Passport entity
-{
-    Person person = personRepository.findById(1L).get();
-    personRepository.delete(person);
+// Bug
+// public void deletePersonWithPassport() // delete a Person entity with a Passport entity
+// {
+//     Person person = personRepository.findById(1L).get();
+//     personRepository.delete(person);
 
-}
+// }
 
 public List<Person> getAllPersons() // get all Person entities
 {
