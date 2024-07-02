@@ -11,7 +11,8 @@ public class Person {
     private String name;
 
     @OneToOne(cascade = CascadeType.ALL)
-
+    // cascade = CascadeType.ALL gibt an, dass alle Operationen, die auf der Person Klasse ausgeführt werden, auch auf die Passport Klasse angewendet werden
+    
     @JoinColumn(name = "passport_id", referencedColumnName = "id")
     // name ="passport_id" gibt den Namen der Spalte an, die in der Person Tabelle erstellt wird, umd die Beziehung zu der Passport Tabelle zu definieren
 
