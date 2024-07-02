@@ -24,7 +24,7 @@ public class MyService {
 public void createPersonWithPassport() // create a Person entity with a Passport entity
 {
     Person person = new Person();
-    person.setName("Max Mustermann");
+    person.setName("Timo");
 
     Passport passport = new Passport();
     passport.setPassportNumber("123456789");
