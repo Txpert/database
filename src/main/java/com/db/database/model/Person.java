@@ -14,8 +14,8 @@ public class Person {
     // cascade = CascadeType.ALL gibt an, dass alle Operationen, die auf der Person Klasse ausgeführt werden, auch auf die Passport Klasse angewendet werden
     
     @JoinColumn(name = "passport_id", referencedColumnName = "id")
-    // name ="passport_id" gibt den Namen der Spalte an, die in der Person Tabelle erstellt wird, umd die Beziehung zu der Passport Tabelle zu definieren
-
+    // joinColumn: Verknüpft die passport_id Spalte in der Person Tabelle mit der id Spalte in der Passport Tabelle.
+    
     private Passport passport;
 
 

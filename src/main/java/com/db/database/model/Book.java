@@ -12,7 +12,8 @@ private String title;
 
 @ManyToOne // gibt an, dass die Beziehung in der Author Klasse definiert ist
 @JoinColumn(name = "author_id", nullable = false)
-// name = "author_id" gibt den Namen der Spalte an, die in der Book Tabelle erstellt wird, um die Beziehung zu der Author Tabelle zu definieren
+//joinColumn: Verknüpft die author_id Spalte in der Person Tabelle mit der id Spalte in der Book Tabelle. 
+
 // nullable = false gibt an, dass der author_id Wert nicht null sein kann
 // Die Beziehung wird in der Author Klasse definiert
 //Verknüpt die author_id Spalte in der Book Tabelle mit der id Spalte in der Author Tabelle
