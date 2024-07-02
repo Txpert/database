@@ -23,11 +23,6 @@ public class MyController {
         myService.createAuthorWithBooks();
     }
 
-    // @DeleteMapping("/deletePersonWithPassport")
-    // public void deletePersonWithPassport() {
-    //     myService.deletePersonWithPassport();
-    // }
-
     @GetMapping("/authors")
     public List<Author> getAllAuthors() {
         return myService.getAllAuthors();
