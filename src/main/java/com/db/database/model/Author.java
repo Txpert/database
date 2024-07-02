@@ -14,7 +14,7 @@ private String name;
 
 @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true)
 // mappedBy = "author" gibt an, dass die Beziehung in der Book Klasse definiert ist
-// cascade = CascadeType.ALL gibt an, dass alle Operationen, die auf der Author Klasse ausgeführt werden, auch auf die Book Klasse angewendet werden
+// cascade = CascadeType.ALL gibt an, dass alle Operationen (Merge, Persist, Remove), die auf der Author Klasse ausgeführt werden, auch auf die Book Klasse angewendet werden
 // orphanRemoval = true gibt an, dass, wenn ein Buch aus der Liste der Bücher entfernt wird, es auch aus der Datenbank entfernt wird
 
 private List<Book> books = new ArrayList<>();  
